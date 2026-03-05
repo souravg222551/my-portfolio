@@ -1,14 +1,14 @@
 "use client";
 import React, { useState } from "react";
 
+import { motion, Variants } from "framer-motion";
 
-import { motion } from "framer-motion";
 import Link from "next/link";
 import SpotlightCard from "../components/SpotlightCard";
 
 export default function Home() {
   // Animation for scrolling into view
-  const fadeUp = {
+  const fadeUp : Variants = {
     hidden: { opacity: 0, y: 40 },
     show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 24 } }
   };
