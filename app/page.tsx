@@ -269,20 +269,23 @@ export default function Home() {
 
               {/* Centered Form */}
               <div className="w-full max-w-xl bg-slate-950/50 p-6 md:p-8 rounded-2xl border border-white/10 text-left">
-                <form onSubmit={handleFormSubmit} className="flex flex-col gap-4">
+               <form onSubmit={handleFormSubmit} className="flex flex-col gap-4">
                   <div className="flex flex-col gap-1">
                     <label htmlFor="name" className="text-sm text-slate-400 font-medium">Name</label>
-                    <input type="text" id="name" required placeholder="John Doe" className="bg-slate-900 border border-white/10 rounded-xl p-3 text-white placeholder:text-slate-600 focus:outline-none focus:border-emerald-500 transition-colors" />
+                    {/* ADDED name="name" */}
+                    <input name="name" type="text" id="name" required placeholder="John Doe" className="bg-slate-900 border border-white/10 rounded-xl p-3 text-white placeholder:text-slate-600 focus:outline-none focus:border-emerald-500 transition-colors" />
                   </div>
                   
                   <div className="flex flex-col gap-1">
                     <label htmlFor="email" className="text-sm text-slate-400 font-medium">Email</label>
-                    <input type="email" id="email" required placeholder="john@company.com" className="bg-slate-900 border border-white/10 rounded-xl p-3 text-white placeholder:text-slate-600 focus:outline-none focus:border-emerald-500 transition-colors" />
+                    {/* ADDED name="email" */}
+                    <input name="email" type="email" id="email" required placeholder="john@company.com" className="bg-slate-900 border border-white/10 rounded-xl p-3 text-white placeholder:text-slate-600 focus:outline-none focus:border-emerald-500 transition-colors" />
                   </div>
 
                   <div className="flex flex-col gap-1">
                     <label htmlFor="message" className="text-sm text-slate-400 font-medium">Message</label>
-                    <textarea id="message" required rows={4} placeholder="How can I help you?" className="bg-slate-900 border border-white/10 rounded-xl p-3 text-white placeholder:text-slate-600 focus:outline-none focus:border-emerald-500 transition-colors resize-none"></textarea>
+                    {/* ADDED name="message" */}
+                    <textarea name="message" id="message" required rows={4} placeholder="How can I help you?" className="bg-slate-900 border border-white/10 rounded-xl p-3 text-white placeholder:text-slate-600 focus:outline-none focus:border-emerald-500 transition-colors resize-none"></textarea>
                   </div>
 
                   <button 
