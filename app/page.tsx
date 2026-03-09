@@ -182,6 +182,19 @@ export default function Home() {
                 </div>
               </SpotlightCard>
             </Link>
+            {/* TrustMesh Sentinel */}
+            <Link href="/project/trustmesh-sentinel" className="block md:col-span-2">
+              <SpotlightCard className="rounded-3xl border border-emerald-500/30 bg-gradient-to-br from-emerald-900/40 to-slate-900 p-8 group cursor-pointer hover:bg-white/10 transition-colors h-full">
+                <p className="text-sm font-semibold text-emerald-400 mb-2 uppercase tracking-wider">Full-Stack & Extension</p>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">TrustMesh Sentinel</h3>
+                <p className="text-slate-300 mb-6">A dual-layered verification platform and Chrome Extension to detect AI-generated media and create digital birth certificates.</p>
+                <div className="flex gap-2 flex-wrap">
+                    <span className="bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider border border-emerald-500/20">Next.js</span>
+                    <span className="bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider border border-emerald-500/20">Supabase</span>
+                    <span className="bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider border border-emerald-500/20">Chrome API</span>
+                </div>
+              </SpotlightCard>
+            </Link>
 
             {/* Pneumonia Detection */}
             <Link href="/project/pneumonia-detection" className="block">
